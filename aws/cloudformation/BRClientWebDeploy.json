@@ -2,7 +2,7 @@
   "Parameters": {
     "BRClientDownloadURL": {
       "Type": "String",
-      "Default": "https://d226itf0znq2ad.cloudfront.net/out04160810.zip"
+      "Default": "https://github.com/AutoJunjie/BRClient/archive/refs/tags/v0.1.zip"
     }
   },
   "Resources": {
