@@ -1,7 +1,7 @@
 <div align="center">
 <img src="./app/icons/bedrock_32.svg" alt="icon"/>
 
-<h1 align="center">BRClient</h1>
+<h1 align="center">BRClient Cognito</h1>
 
 English / [简体中文](./README_CN.md)
 
@@ -14,31 +14,11 @@ And it was simplified to support AWS Bedrock only.
 
 ## Installation:
 
-Download the latest version following the links:
-
-For Windows user, unzip the zip file and then double click the msi file to install.
-
-For Mac user, unzip the zip file and then open the BRClient.app directly.
-
-Download links:
-
-Windows:
-https://github.com/DamonDeng/BRClient/releases/download/beta1/brclient_windows.zip
-
-
-Mac M Series:
-https://github.com/DamonDeng/BRClient/releases/download/beta1/brclient_m_series.zip
-
-
-Mac x86 Series:
-https://github.com/DamonDeng/BRClient/releases/download/beta1/brclient_x86_mac.zip
-
-
+Use Cloudformation to deploy
 
 Cloudformation template:
-https://raw.githubusercontent.com/DamonDeng/BRClient/main/aws/cloudformation/BRClientWebDeploy.json
+https://raw.githubusercontent.com/AutoJunjie/BRClient/main/aws/cloudformation/BRClientWebDeploy.json
 
-After the client was launched, click the gear icon to config your AWS region and credentials. Then you are ready to go.
 
 #### For Developer:
 
@@ -52,6 +32,11 @@ As the project is still in rapid itelating, we would like to suggest developers 
 5. run `yarn app:dev` to start a desktop app in developer mode.    or:   run `yarn dev` to start a local server and then access the app with browser.
 6. Optional, if you want to run it as an app, run `yarn app:build` to build it, and the find the target file (we believe you can, :-)
 
+if you want to build a new zip
+
+1. yarn export
+2. zip -r out.zip out/ -x "*/"
+3. upload .zip to s3 or github, then use it with your cloudformation
 
 ## Donation
 If you like this project, buy original author yidadaa a Coffee
